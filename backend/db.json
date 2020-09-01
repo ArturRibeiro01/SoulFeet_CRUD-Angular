@@ -1,0 +1,57 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "firstname": "Artur",
+      "lastname": "Ribeiro Carvalho",
+      "birth-date": null,
+      "cpf": "372.845.988-75",
+      "rg": "33.604.222-X",
+      "adreess": "Rua Engenheiro Gualberto",
+      "address-number": 459,
+      "district": "Centro",
+      "city": "Mogi das Cruzes",
+      "uf": "São Paulo",
+      "postal-code": "08770-300",
+      "country": "Brasil",
+      "phone1": "(11)979851616",
+      "phone2": "",
+      "e-mail": "profissional.arturrc@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Fernanda",
+      "lastname": "Pires Vitorino",
+      "birth-date": null,
+      "cpf": "",
+      "rg": "",
+      "adreess": "Av. Major Mello ",
+      "address-number": 842,
+      "district": "Vila Aparecida",
+      "city": "Mogi das Cruzes",
+      "uf": "São Paulo",
+      "postal-code": "",
+      "country": "Brasil",
+      "phone1": "(11)971348641",
+      "phone2": "",
+      "e-mail": "fpv.nanda0305@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Óleo de Melaleuca Qualquer Marcadsadsa",
+      "price": 40
+    },
+    {
+      "id": 2,
+      "name": "Samsung S20",
+      "price": "7000.9"
+    },
+    {
+      "name": "Caneta Preta",
+      "price": "10.00",
+      "id": 3
+    }
+  ]
+}
