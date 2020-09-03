@@ -37,7 +37,6 @@ export class ProductService {
         );
       }
       
-      
       // Faz a leitura da api e retorna o que está no objeto produto
       read(): Observable<Product[]> {
         return this.http.get<Product[]>(this.baseUrl).pipe(
@@ -70,7 +69,6 @@ export class ProductService {
           );;
       }
 
-      
       errorHandler(e: any): Observable<any>{
         this.showMessage('Ocorreu um erro',true)
         return EMPTY

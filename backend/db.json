@@ -40,18 +40,18 @@
   "products": [
     {
       "id": 1,
-      "name": "Óleo de Melaleuca Qualquer Marcadsadsa",
+      "name": "Alicate de unha",
       "price": 40
     },
     {
       "id": 2,
-      "name": "Samsung S20",
-      "price": "7000.9"
+      "name": "Alicate de eponíqueo",
+      "price": 120
     },
     {
-      "name": "Caneta Preta",
-      "price": "10.00",
-      "id": 3
+      "name": "Bisturi para calos",
+      "price": 350,
+      "id": 4
     }
   ]
 }

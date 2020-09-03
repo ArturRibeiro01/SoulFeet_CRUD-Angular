@@ -11,3 +11,14 @@ i.edit{
 i.delete{
     color: #dc0000;
 }
+.column-title{
+    color:  #154d59; ;
+    font-size: 1rem
+}
+.tab-row-id{
+    color: #154d59 ;
+    font-weight: bold;
+}
+.table-data{
+    letter-spacing: 0.5px;
+}

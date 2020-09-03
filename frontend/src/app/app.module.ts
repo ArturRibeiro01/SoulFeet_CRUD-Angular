@@ -13,8 +13,11 @@ import { NavComponent } from "./components/template/nav/nav.component";
 
 // Imports de views criados
 import { HomeComponent } from "./views/home/home.component";
+// Views Product
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+// Views Clients
+
 
 // Imports de itens do  Angular Material.
 import { MatToolbarModule } from "@angular/material/toolbar";
