@@ -3,7 +3,10 @@ form{
     flex-direction: column;
 }
 input{
-    gap: 10px;
+    gap: 10px;   
+}
+input:focus{
+    color: #154d59;
 }
 button{
     margin: 20px 15px 0px 0px;

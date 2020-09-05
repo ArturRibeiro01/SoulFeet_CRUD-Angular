@@ -15,12 +15,13 @@ export class ProductCreateComponent implements OnInit {
     price: null,
   }
 
-  constructor(private productService: ProductService,
-    private router: Router){}
+  constructor(
+    private productService: ProductService,
+    private router: Router
+  ){}
 
   ngOnInit(): void{
   }
-
   
   createProduct():void {
     this.productService.create(this.product).subscribe(()=>{
@@ -40,7 +41,6 @@ export class ProductCreateComponent implements OnInit {
     this.productService.showMessage('Seu Cadastro não foi concluído')
     console.log('Criei o produto e retornei para a tela')
 
-    
     // Volta para a tela de produtos após a clicar em cancelar
     this.router.navigate(['/products'])
   }

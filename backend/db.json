@@ -2,8 +2,7 @@
   "clients": [
     {
       "id": 1,
-      "firstname": "Artur",
-      "lastname": "Ribeiro Carvalho",
+      "name": "Artur Ribeiro Carvalho",
       "birth-date": null,
       "cpf": "372.845.988-75",
       "rg": "33.604.222-X",
@@ -20,8 +19,7 @@
     },
     {
       "id": 2,
-      "firstname": "Fernanda",
-      "lastname": "Pires Vitorino",
+      "firstname": "FernandaPires Vitorino",
       "birth-date": null,
       "cpf": "",
       "rg": "",
@@ -39,18 +37,18 @@
   ],
   "products": [
     {
-      "id": 1,
-      "name": "Alicate de unha",
-      "price": 40
-    },
-    {
       "id": 2,
       "name": "Alicate de eponíqueo",
-      "price": 120
+      "price": "115"
     },
     {
-      "name": "Bisturi para calos",
-      "price": 350,
+      "name": "Alicate de unha xyz",
+      "price": "25.00",
+      "id": 3
+    },
+    {
+      "name": "dsdsadsadsadad",
+      "price": "30.00",
       "id": 4
     }
   ]

@@ -1,14 +1,15 @@
-
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 
-// Imports Rotas de Clientes
+// Imports de Views
+import { HomeComponent } from "./views/home/home.component";
 
-
+// Imports de ROtas de Clientes
+import { ClientCrudComponent } from './views/client-crud/client-crud.component';
+import {ClientCreateComponent} from './components/client/client-create/client-create.component'
 
 // Imports Rotas de Produtos
-import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
 import {ProductCreateComponent} from "./components/product/product-create/product-create.component"
 import {ProductUpdateComponent} from "./components/product/product-update/product-update.component"
@@ -19,6 +20,14 @@ const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
+  },
+  {
+    path:"clients",
+    component: ClientCrudComponent,
+  },
+  {
+    path: "clients/create",
+    component: ClientCreateComponent
   },
   {
     path: "products",
@@ -35,7 +44,7 @@ const routes: Routes = [
   {
     path: "products/delete/:id",
     component: ProductDeleteComponent,
-  },
+  }
 ];
 
 @NgModule({

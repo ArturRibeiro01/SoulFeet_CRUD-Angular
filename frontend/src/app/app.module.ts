@@ -2,6 +2,7 @@ import { NgModule, LOCALE_ID } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 
+
 // Imports de componentes nativos
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -17,7 +18,8 @@ import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 // Views Clients
-
+import { ClientCrudComponent } from './views/client-crud/client-crud.component';
+import { ClientCreateComponent } from './components/client/client-create/client-create.component';
 
 // Imports de itens do  Angular Material.
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -32,7 +34,7 @@ import{ FormsModule} from '@angular/forms'
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 // Imports de diretivas
 import { RedDirective } from './directives/red.directive';
@@ -52,6 +54,8 @@ import {registerLocaleData} from "@angular/common";
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
+
+
 registerLocaleData(localePt);
   
 @NgModule({
@@ -63,11 +67,13 @@ registerLocaleData(localePt);
     HeaderComponent,
     NavComponent,
     FooterComponent,
-
+    
     // Declarations de Views criadas
     HomeComponent,
     ProductCrudComponent,
     ProductCreateComponent,
+    ClientCrudComponent,
+    ClientCreateComponent,
 
     // Declarations de diretivas
     RedDirective,
@@ -80,7 +86,7 @@ registerLocaleData(localePt);
   ],
 
   // Todas imports das declarações.
-  imports: [
+  imports:[
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -99,11 +105,15 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDatepickerModule
   ],
-  providers: [{
+  providers: [
+    {
     provide:LOCALE_ID,
     useValue:'pt-BR'
   }],
-  bootstrap: [AppComponent],
+  bootstrap: [
+    AppComponent
+  ],
 })
 export class AppModule {}
